@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timestamp Microservice</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        FCC: Timestamp Microservice
+      </h1>
+    </header>
+
+    <main>
+      <h3 class="title">
+        User Stories
+      </h3>
+      <ol id="stories">
+        <li>I can pass a string as parameter and it will check whether the
+          string contains either a unix timestamp or a natural language date.
+        </li>
+        <li>If it does, it returns both the unix timestamp and the natural
+          language representation of that date.</li>
+        <li>If it does not, returns <span id="null">null</span> for both
+          properties.</li>
+      </ol>
+
+      <h3 class="title">
+        Examples of Usage
+      </h3>
+      <ul id="links">
+        <li><a href="https://stitch-zoo.glitch.me/October 31, 2017/"
+          target="_blank"
+          class="date-link">https://stitch-zoo.glitch.me/October 31, 2017</a>
+        </li>
+        <li><a href="https://stitch-zoo.glitch.me/Jan%31,%2018/"
+          target="_blank"
+          class="date-link">https://stitch-zoo.glitch.me/Jan%31,%2018</a>
+        </li>
+        <li><a href="https://stitch-zoo.glitch.me/1509408000000/"
+          target="_blank"
+          class="date-link">https://stitch-zoo.glitch.me/1509408000000</a>
+        </li>
+        <li><a href="https://stitch-zoo.glitch.me/hello/" class="date-link"
+          target="_blank">
+          https://stitch-zoo.glitch.me/hello</a>
+        </li>
+      </ul>
+
+      <h3 class="title">
+        Example output
+      </h3>
+      <p class="output">
+        <span class="code">
+          { "unix": 1509408000000, "natural": "October 31, 2017" }
+        </span><br/>
+        or <br/>
+        <span class="code">
+        { "unix": null, "natural": null }
+      </span>
+      </p>
+
+    </main>
+  </body>
+</html>
+
